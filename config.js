@@ -6,7 +6,7 @@
 
 const CONFIG = {
   nombre: "David Salamanca",
-  titulo: "Desarrollador Web",
+  titulo: "Desarrollador Web & Emprendedor",
   eslogan: "Construyo sitios web rápidos, modernos y a la medida de tu negocio.",
 
   // --- WhatsApp ---
@@ -16,8 +16,9 @@ const CONFIG = {
   correo: "david.salamanca@upolitecnica.cr",
 
   sobreMi: [
-    "Soy desarrollador web enfocado en ayudar a pequeños negocios a tener presencia digital profesional, sin complicaciones ni costos innecesarios.",
+    "Soy desarrollador web y emprendedor, enfocado en ayudar a pequeños negocios a tener presencia digital profesional, sin complicaciones ni costos innecesarios.",
     "Diseño y construyo sitios rápidos, responsivos y fáciles de mantener — desde landing pages para negocios locales hasta sistemas más completos, siempre cuidando el detalle en diseño y experiencia de usuario.",
+    "Como también emprendo por mi cuenta, entiendo de primera mano lo que un negocio necesita: resultados concretos, sin vueltas ni tecnicismos innecesarios.",
   ],
 
   habilidades: [
