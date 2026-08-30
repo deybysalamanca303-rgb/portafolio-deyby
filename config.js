@@ -55,5 +55,6 @@ const CONFIG = {
     { numero: "01", titulo: "Conversamos", descripcion: "Entendemos qué necesita tu negocio y qué quieres lograr con tu sitio web." },
     { numero: "02", titulo: "Diseño y desarrollo", descripcion: "Construyo la propuesta visual y funcional con un flujo de trabajo asistido por IA, lo que me permite entregar resultados rápidos sin sacrificar calidad." },
     { numero: "03", titulo: "Publicación", descripcion: "Subo el sitio en vivo, con hosting y dominio listos, y te explico cómo mantenerlo." },
+    { numero: "04", titulo: "Mantenimiento", descripcion: "Actualizo precios, fotos y contenido cuando lo necesites, y resuelvo cualquier detalle técnico que surja." },
   ],
 };
