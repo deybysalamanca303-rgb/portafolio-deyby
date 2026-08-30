@@ -13,7 +13,7 @@ const CONFIG = {
   whatsappNumero: "50660880073",
   whatsappMensaje: "Hola David, vi tu portafolio y me gustaría conversar sobre un proyecto",
 
-  correo: "david.salamanca@upolitecnica.cr",
+  correo: "davidsalamanca441@gmail.com",
 
   sobreMi: [
     "Soy desarrollador web y emprendedor, enfocado en ayudar a pequeños negocios a tener presencia digital profesional, sin complicaciones ni costos innecesarios.",
