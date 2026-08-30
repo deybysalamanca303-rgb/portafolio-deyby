@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Salamanca — Desarrollador Web</title>
+  <meta name="description" content="Desarrollador web freelance. Sitios rápidos, modernos y a la medida para negocios y proyectos personales." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="David Salamanca — Desarrollador Web" />
+  <meta property="og:description" content="Construyo sitios web rápidos, modernos y a la medida de tu negocio." />
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" id="logo-nombre">DS</a>
+      <nav class="nav" id="nav">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#" class="btn btn--nav" id="nav-whatsapp" target="_blank" rel="noopener">Contactar</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero__blob"></div>
+    <div class="container hero__inner">
+      <p class="hero__saludo reveal">👋 Hola, soy</p>
+      <h1 class="reveal" id="hero-nombre">David Salamanca</h1>
+      <p class="hero__titulo reveal" id="hero-titulo">Desarrollador Web</p>
+      <p class="hero__eslogan reveal" id="hero-eslogan"></p>
+      <div class="hero__cta reveal">
+        <a href="#" class="btn btn--primary" id="hero-whatsapp" target="_blank" rel="noopener">Hablemos por WhatsApp</a>
+        <a href="#proyectos" class="btn btn--outline">Ver proyectos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE MÍ ===== -->
+  <section class="sobre-mi" id="sobre-mi">
+    <div class="container sobre-mi__grid">
+      <div class="sobre-mi__visual reveal">
+        <div class="sobre-mi__tarjeta">
+          <span class="sobre-mi__numero" data-valor="2">0</span>
+          <span class="sobre-mi__etiqueta">Sitios publicados</span>
+        </div>
+        <div class="sobre-mi__tarjeta sobre-mi__tarjeta--acento">
+          <span class="sobre-mi__numero" data-valor="100%">0</span>
+          <span class="sobre-mi__etiqueta">A la medida</span>
+        </div>
+      </div>
+      <div class="sobre-mi__texto">
+        <p class="section-eyebrow reveal">Sobre mí</p>
+        <h2 class="section-title reveal">Convierto ideas en sitios web reales</h2>
+        <div id="sobre-mi-parrafos"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section class="habilidades" id="habilidades">
+    <div class="container">
+      <p class="section-eyebrow reveal">Qué puedo hacer</p>
+      <h2 class="section-title reveal">Servicios y habilidades</h2>
+      <div class="habilidades__grid" id="habilidades-grid">
+        <!-- Se genera con JavaScript desde config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section class="proyectos" id="proyectos">
+    <div class="container">
+      <p class="section-eyebrow reveal">Trabajos recientes</p>
+      <h2 class="section-title reveal">Proyectos</h2>
+      <div class="proyectos__lista" id="proyectos-lista">
+        <!-- Se genera con JavaScript desde config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contacto" id="contacto">
+    <div class="container contacto__inner">
+      <p class="section-eyebrow section-eyebrow--claro reveal">¿Tienes un proyecto en mente?</p>
+      <h2 class="contacto__titulo reveal">Hablemos y hagámoslo realidad</h2>
+      <div class="contacto__cta reveal">
+        <a href="#" class="btn btn--primary" id="contacto-whatsapp" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <a href="#" class="btn btn--outline btn--outline-claro" id="contacto-correo">Enviar correo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p id="footer-nombre">David Salamanca</p>
+      <p class="footer__copy">© <span id="footer-anio"></span> — Hecho con dedicación.</p>
+    </div>
+  </footer>
+
+  <!-- ===== BOTÓN FLOTANTE DE WHATSAPP ===== -->
+  <a href="#" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    💬
+  </a>
+
+  <script src="config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
