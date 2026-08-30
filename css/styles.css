@@ -121,11 +121,17 @@ h1, h2, h3 { font-family: var(--fuente-titulos); }
 }
 .hero__inner { position: relative; z-index: 1; }
 .hero__avatar {
-  width: 128px; height: 128px;
+  width: 96px; height: 96px;
   margin: 0 auto 20px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
+  background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+  color: #fff;
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 12px 30px rgba(124, 58, 237, 0.3);
 }
 .hero__saludo { font-weight: 700; color: var(--color-acento); margin-bottom: 10px; font-size: 1.1rem; }

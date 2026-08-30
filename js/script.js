@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   document.getElementById("contacto-correo").href = `mailto:${CONFIG.correo}`;
 
+  // --- Avatar (iniciales, mientras no haya foto real con buena luz) ---
+  const iniciales = CONFIG.nombre.split(" ").map((p) => p[0]).slice(0, 2).join("").toUpperCase();
+  document.getElementById("hero-avatar").textContent = iniciales;
+
   // --- Sobre mí ---
   const contenedorSobreMi = document.getElementById("sobre-mi-parrafos");
   CONFIG.sobreMi.forEach((texto) => {
