@@ -120,6 +120,20 @@ h1, h2, h3 { font-family: var(--fuente-titulos); }
   z-index: 0;
 }
 .hero__inner { position: relative; z-index: 1; }
+.hero__avatar {
+  width: 96px; height: 96px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+  color: #fff;
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.3);
+}
 .hero__saludo { font-weight: 700; color: var(--color-acento); margin-bottom: 10px; font-size: 1.1rem; }
 .hero h1 { font-size: 3.4rem; margin-bottom: 6px; }
 .hero__titulo {
@@ -174,26 +188,62 @@ h1, h2, h3 { font-family: var(--fuente-titulos); }
 .habilidad-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
 .habilidad-card p { color: var(--color-texto-suave); font-size: 0.92rem; }
 
+/* ============ STACK TECNOLÓGICO ============ */
+.stack { margin-top: 50px; text-align: center; }
+.stack__etiqueta { display: block; font-weight: 700; color: var(--color-texto-suave); margin-bottom: 16px; font-size: 0.9rem; }
+.stack__lista { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.stack__chip {
+  background: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  color: var(--color-texto);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 8px 18px;
+  border-radius: 999px;
+}
+
+/* ============ PROCESO DE TRABAJO ============ */
+.proceso { padding: 100px 0; }
+.proceso__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; }
+.proceso-item { position: relative; padding-left: 6px; }
+.proceso-item__numero {
+  display: block;
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+  font-size: 2.4rem;
+  background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+}
+.proceso-item h3 { font-size: 1.15rem; margin-bottom: 8px; }
+.proceso-item p { color: var(--color-texto-suave); font-size: 0.95rem; }
+
 /* ============ PROYECTOS ============ */
-.proyectos { padding: 100px 0; }
-.proyectos__lista { display: flex; flex-direction: column; gap: 20px; }
+.proyectos { padding: 100px 0; background: var(--color-fondo-alterno); }
+.proyectos__lista { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; }
 .proyecto-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  background: var(--color-fondo-alterno);
+  background: var(--color-fondo);
   border-radius: var(--radio);
-  padding: 32px;
-  flex-wrap: wrap;
+  overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.proyecto-card:hover { transform: translateY(-4px); box-shadow: var(--sombra); }
-.proyecto-card__texto h3 { font-size: 1.3rem; margin-bottom: 8px; }
-.proyecto-card__texto p { color: var(--color-texto-suave); max-width: 480px; }
+.proyecto-card:hover { transform: translateY(-6px); box-shadow: var(--sombra); }
+.proyecto-card__mockup {
+  height: 140px;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 16px 18px;
+}
+.proyecto-card__mockup-punto { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.55); }
+.proyecto-card__texto { padding: 28px; }
+.proyecto-card__texto h3 { font-size: 1.25rem; margin-bottom: 8px; }
+.proyecto-card__texto p { color: var(--color-texto-suave); margin-bottom: 18px; }
 .proyecto-card__etiqueta {
   display: inline-block;
-  background: #fff;
+  background: var(--color-fondo-alterno);
   color: var(--color-primario);
   font-size: 0.75rem;
   font-weight: 700;
@@ -202,14 +252,12 @@ h1, h2, h3 { font-family: var(--fuente-titulos); }
   margin-bottom: 12px;
 }
 .proyecto-card__link {
-  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   font-weight: 700;
   color: var(--color-primario);
   text-decoration: none;
-  white-space: nowrap;
 }
 .proyecto-card__link:hover { text-decoration: underline; }
 

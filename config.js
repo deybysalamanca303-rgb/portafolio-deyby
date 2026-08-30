@@ -33,12 +33,26 @@ const CONFIG = {
       descripcion: "Landing page para lavacar con servicios, galería, testimonios y agenda directa por WhatsApp.",
       url: "https://lavacarlaprimera.netlify.app",
       etiqueta: "Landing Page",
+      colorA: "#0d6efd",
+      colorB: "#25d366",
     },
     {
       nombre: "Lavacar La Cuarta",
       descripcion: "Sitio con identidad visual propia: barra lateral, panel de reseñas y sello de garantía animado.",
       url: "https://lavacarlacuarta.netlify.app",
       etiqueta: "Landing Page",
+      colorA: "#111827",
+      colorB: "#facc15",
     },
+  ],
+
+  // --- Stack tecnológico ---
+  stack: ["HTML5", "CSS3", "JavaScript", "Git & GitHub", "Netlify", "IA aplicada al desarrollo"],
+
+  // --- Cómo trabajo ---
+  proceso: [
+    { numero: "01", titulo: "Conversamos", descripcion: "Entendemos qué necesita tu negocio y qué quieres lograr con tu sitio web." },
+    { numero: "02", titulo: "Diseño", descripcion: "Construyo una propuesta visual y funcional, ajustada a tu marca y presupuesto." },
+    { numero: "03", titulo: "Publicación", descripcion: "Subo el sitio en vivo, con hosting y dominio listos, y te explico cómo mantenerlo." },
   ],
 };

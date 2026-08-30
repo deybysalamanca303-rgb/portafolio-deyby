@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   document.getElementById("contacto-correo").href = `mailto:${CONFIG.correo}`;
 
+  // --- Avatar (iniciales, mientras no haya foto real) ---
+  const iniciales = CONFIG.nombre.split(" ").map((p) => p[0]).slice(0, 2).join("").toUpperCase();
+  document.getElementById("hero-avatar").textContent = iniciales;
+
   // --- Sobre mí ---
   const contenedorSobreMi = document.getElementById("sobre-mi-parrafos");
   CONFIG.sobreMi.forEach((texto) => {
@@ -48,14 +52,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const card = document.createElement("div");
     card.className = "proyecto-card reveal";
     card.innerHTML = `
+      <div class="proyecto-card__mockup" style="background: linear-gradient(135deg, ${p.colorA}, ${p.colorB})">
+        <span class="proyecto-card__mockup-punto"></span>
+        <span class="proyecto-card__mockup-punto"></span>
+        <span class="proyecto-card__mockup-punto"></span>
+      </div>
       <div class="proyecto-card__texto">
         <span class="proyecto-card__etiqueta">${p.etiqueta}</span>
         <h3>${p.nombre}</h3>
         <p>${p.descripcion}</p>
+        <a class="proyecto-card__link" href="${p.url}" target="_blank" rel="noopener">Ver sitio ↗</a>
       </div>
-      <a class="proyecto-card__link" href="${p.url}" target="_blank" rel="noopener">Ver sitio ↗</a>
     `;
     listaProyectos.appendChild(card);
+  });
+
+  // --- Stack tecnológico ---
+  const stackLista = document.getElementById("stack-lista");
+  CONFIG.stack.forEach((tec) => {
+    const chip = document.createElement("span");
+    chip.className = "stack__chip";
+    chip.textContent = tec;
+    stackLista.appendChild(chip);
+  });
+
+  // --- Proceso de trabajo ---
+  const gridProceso = document.getElementById("proceso-grid");
+  CONFIG.proceso.forEach((paso) => {
+    const item = document.createElement("div");
+    item.className = "proceso-item reveal";
+    item.innerHTML = `
+      <span class="proceso-item__numero">${paso.numero}</span>
+      <h3>${paso.titulo}</h3>
+      <p>${paso.descripcion}</p>
+    `;
+    gridProceso.appendChild(item);
   });
 
   // --- Menú móvil ---

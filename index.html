@@ -24,6 +24,7 @@
       <nav class="nav" id="nav">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#habilidades">Habilidades</a>
+        <a href="#proceso">Proceso</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -36,6 +37,7 @@
   <section class="hero" id="inicio">
     <div class="hero__blob"></div>
     <div class="container hero__inner">
+      <div class="hero__avatar reveal" id="hero-avatar"></div>
       <p class="hero__saludo reveal">👋 Hola, soy</p>
       <h1 class="reveal" id="hero-nombre">David Salamanca</h1>
       <p class="hero__titulo reveal" id="hero-titulo">Desarrollador Web</p>
@@ -74,6 +76,21 @@
       <p class="section-eyebrow reveal">Qué puedo hacer</p>
       <h2 class="section-title reveal">Servicios y habilidades</h2>
       <div class="habilidades__grid" id="habilidades-grid">
+        <!-- Se genera con JavaScript desde config.js -->
+      </div>
+      <div class="stack reveal">
+        <span class="stack__etiqueta">Con qué trabajo:</span>
+        <div class="stack__lista" id="stack-lista"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CÓMO TRABAJO ===== -->
+  <section class="proceso" id="proceso">
+    <div class="container">
+      <p class="section-eyebrow reveal">Cómo trabajo</p>
+      <h2 class="section-title reveal">De la idea al sitio publicado</h2>
+      <div class="proceso__grid" id="proceso-grid">
         <!-- Se genera con JavaScript desde config.js -->
       </div>
     </div>
