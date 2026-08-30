@@ -48,12 +48,12 @@ const CONFIG = {
   ],
 
   // --- Stack tecnológico ---
-  stack: ["HTML5", "CSS3", "JavaScript", "Git & GitHub", "Netlify", "IA aplicada al desarrollo"],
+  stack: ["HTML5", "CSS3", "JavaScript", "Git & GitHub", "Netlify"],
 
   // --- Cómo trabajo ---
   proceso: [
     { numero: "01", titulo: "Conversamos", descripcion: "Entendemos qué necesita tu negocio y qué quieres lograr con tu sitio web." },
-    { numero: "02", titulo: "Diseño", descripcion: "Construyo una propuesta visual y funcional, ajustada a tu marca y presupuesto." },
+    { numero: "02", titulo: "Diseño y desarrollo", descripcion: "Construyo la propuesta visual y funcional con un flujo de trabajo asistido por IA, lo que me permite entregar resultados rápidos sin sacrificar calidad." },
     { numero: "03", titulo: "Publicación", descripcion: "Subo el sitio en vivo, con hosting y dominio listos, y te explico cómo mantenerlo." },
   ],
 };
